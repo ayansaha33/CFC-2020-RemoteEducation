@@ -1,0 +1,14 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: cfc2020remoteeducation
+  buildpack: java_buildpack
+  path: ./target/javaspringapp-1.0-SNAPSHOT.jar
+  disk_quota: 1G
+  memory: 256M
+  domain: eu-gb.mybluemix.net
+  host: cfc-2020-remote-education
+  env:
+    JAVA_OPTS: '-XX:ReservedCodeCacheSize=32M -XX:MaxDirectMemorySize=32M'
+    JBP_CONFIG_OPEN_JDK_JRE: '[memory_calculator: {stack_threads: 30}]'
