@@ -1,12 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+// import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import MainDashboard from "./Components/Student Dashboard/MainDashboard";
+// import MainTDashboard from "./Components/Teacher Dashboard/MainTDashboard";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <MainDashboard />
+    {/* <MainTDashboard /> */}
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -8,6 +8,7 @@ import About from "./Components/About/About";
 import Features from "./Components/Features/Features";
 import Contact from "./Components/ContactUs/ContactUs";
 import HomePage from "./Components/HomePage/HomePage";
+import "@devexpress/dx-react-chart-bootstrap4/dist/dx-react-chart-bootstrap4.css";
 
 function App() {
   return (
